@@ -1,37 +1,27 @@
 # Ninja
 
-Ninja is a small build system with a focus on speed.
+Ninja是一个注重速度的小型构建系统。
 https://ninja-build.org/
 
-See [the manual](https://ninja-build.org/manual.html) or
-`doc/manual.asciidoc` included in the distribution for background
-and more details.
+有关背景和更多详细信息,请参见发行版中所包含的[手册](https://ninja-build.org/manual.html)或[文档](doc/manual.asciidoc).
 
-Binaries for Linux, Mac, and Windows are available at
-  [GitHub](https://github.com/ninja-build/ninja/releases).
-Run `./ninja -h` for Ninja help.
+Linux，Mac和Windows的二进制文件位于[GitHub](https://github.com/ninja-build/ninja/releases).
+运行`./ninja -h`以获得更多帮助信息.
 
-Installation is not necessary because the only required file is the
-resulting ninja binary. However, to enable features like Bash
-completion and Emacs and Vim editing modes, some files in misc/ must be
-copied to appropriate locations.
+不需要进行安装，因为唯一需要的文件是生成的Ninja二进制文件.
+但是,要启用Bash补全,Emacs和Vim编辑模式等功能,`misc/`中的某些文件必须复制到适当的位置.
 
-If you're interested in making changes to Ninja, read CONTRIBUTING.md first.
+如果您想对Ninja进行更改，请先阅读[CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Building Ninja itself
 
-You can either build Ninja via the custom generator script written in Python or
-via CMake. For more details see
-[the wiki](https://github.com/ninja-build/ninja/wiki).
+您可以通过使用Python编写的脚本或通过CMake编译Ninja,有关更多详细信息,请参见[wiki](https://github.com/ninja-build/ninja/wiki).
 
 ### Python
 
 ```
 ./configure.py --bootstrap
 ```
-
-This will generate the `ninja` binary and a `build.ninja` file you can now use
-to build Ninja with itself.
 
 ### CMake
 
@@ -40,10 +30,7 @@ cmake -Bbuild-cmake -H.
 cmake --build build-cmake
 ```
 
-The `ninja` binary will now be inside the `build-cmake` directory (you can
-choose any other name you like).
-
-To run the unit tests:
+运行以下命令以进行测试:
 
 ```
 ./build-cmake/ninja_test
