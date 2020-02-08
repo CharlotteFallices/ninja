@@ -5,7 +5,7 @@ https://ninja-build.org/
 
 有关背景和更多详细信息,请参见发行版中所包含的[手册](https://ninja-build.org/manual.html)或[文档](doc/manual.asciidoc).
 
-Linux，Mac和Windows的二进制文件位于[GitHub](https://github.com/ninja-build/ninja/releases).
+Linux，Mac和Windows的二进制文件位于[GitHub](releases).
 运行`./ninja -h`以获得更多帮助信息.
 
 不需要进行安装，因为唯一需要的文件是生成的Ninja二进制文件.
